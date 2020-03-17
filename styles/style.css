@@ -1,0 +1,37 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#chat {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.notification {
+  text-align: center;
+}
+
+.notification span {
+  background-color: #fbffc8;
+  color: gray;
+}
+
+.meta {
+  margin-bottom: 10px;
+}
+
+.meta .name {
+  font-weight: bold;
+  font-size: 13pt;
+  margin-right: 10px;
+}
+
+.meta .time {
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */

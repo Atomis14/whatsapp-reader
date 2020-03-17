@@ -1,0 +1,35 @@
+$lightgrey: rgb(212, 212, 212);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#chat {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.notification {
+    text-align: center;
+    span {
+        background-color: rgb(251, 255, 200);
+        color: gray;
+    }
+}
+
+.meta {
+    margin-bottom: 10px;
+    .name {
+        font-weight: bold;
+        font-size: 13pt;
+        margin-right: 10px;
+    }
+    .time {
+        font-style: italic;
+
+    }
+}
