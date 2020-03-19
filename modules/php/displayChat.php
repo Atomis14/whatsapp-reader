@@ -13,6 +13,10 @@
             } elseif($type == "message") {
                 echo "<div class='meta'><span class='name'>{$name}</span> <span class='time'>{$date} um {$time}</span></div>";
                 echo "{$content}";
+            } elseif($type == "file") {
+                echo "<div class='meta'><span class='name'>{$name}</span> <span class='time'>{$date} um {$time}</span></div>";
+                $path = substr($content, 0, strpos($content, ".")+4);
+                echo "<a href='chats-dev/Gwen/{$path}' target='_blank'><img src='chats-dev/Gwen/{$path}' class='image' /></a>";
             }
             
             echo "<hr/>";

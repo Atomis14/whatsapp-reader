@@ -34,4 +34,12 @@ body {
 .meta .time {
   font-style: italic;
 }
+
+.file span {
+  font-weight: bold;
+}
+
+.image {
+  width: 200px;
+}
 /*# sourceMappingURL=style.css.map */
