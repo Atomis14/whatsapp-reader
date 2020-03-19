@@ -3,12 +3,8 @@
     require_once "modules/php/displayChat.php";
     require_once "modules/php/readDirectory.php";
     
-    $data = readChat("chats-dev/Gwen/chat.txt");
-    
-    echo "<ul>";
-    $directory = readDirectory("./chats");
-    echo "</ul>";
-
+    $chats = readDirectory("./chats");
+    $chat = $_GET["chat"];
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +17,8 @@
 <body onload=' location.href="#anchor" '>
     <div id="chat">
         <?php
-            displayChat($data);
+            $data = readChat("{$chat}");
+            displayChat($data, $chat);
         ?>
     </div>
     <div id="anchor"></div>
