@@ -12,6 +12,15 @@ body {
   margin: 0 auto;
 }
 
+.bubble {
+  border-top: 2px solid gray;
+  padding: 10px;
+}
+
+.deleted {
+  color: grey;
+}
+
 .notification {
   text-align: center;
 }
